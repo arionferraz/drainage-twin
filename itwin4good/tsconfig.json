@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["babel__generator"],
+    "typeRoots": ["node_modules/@types", "path/to/your/custom/types"],
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src",
+    "src/components"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "short_name": "iTwin Viewer",
+  "name": "iTwin Viewer React Sample",
+  "icons": [
+    {
+      "src": "LogoDrainageTwin.png",
+      "sizes": "64x64 32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "LogoDrainageTwin.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "LogoDrainageTwin.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

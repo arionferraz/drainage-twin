@@ -1,0 +1,157 @@
+/*---------------------------------------------------------------------------------------------
+* Copyright (c) Bentley Systems, Incorporated. All rights reserved.
+* See LICENSE.md in the project root for license terms and full copyright notice.
+*--------------------------------------------------------------------------------------------*/
+.viewer-container {
+  height: 100vh;
+
+  .signin-content {
+    width: 400px;
+  }
+}
+
+.smart-table {
+  font-size:12px;
+  width: 100%;
+
+  > tbody {
+    > tr:not(:first-child):hover{
+      background-color: skyblue;
+      cursor: pointer;
+    }
+  }
+
+  > td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px
+  }
+}
+
+.sensor-wrapper {
+  border: 1px inset gray;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  margin: 15px;
+  position: relative;
+}
+
+.image {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.image::after {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.sensor-wrapper img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: rgb(244, 237, 237);
+}
+
+.partial {
+  --progress: 210deg;
+  background: conic-gradient(rgb(255, 255, 40) var(--progress), gray 0deg);
+  animation: pulse 2s infinite;
+}
+
+.working {
+  --progress: 360deg;
+  background: conic-gradient(rgb(43, 216, 43) var(--progress), gray 0deg);
+  animation: pulse 2s infinite;
+}
+
+.not-working {
+  --progress: 140deg;
+  background: conic-gradient(red var(--progress), gray 0deg);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+  }
+}
+
+.sensor-wrapper h1 {
+  font-size: 17px;
+  font-weight: 300;
+  color: rgb(244, 237, 237);
+}
+
+.sensor-wrapper h2 {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(244, 237, 237);
+}
+
+/* Container Styles */
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px outset #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 5px auto;
+  font-family: 'Arial', sans-serif;
+  background-color: inherit; /* Maintain existing background */
+}
+
+/* Header Styles */
+.news h1 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* Subheader Styles */
+.news h3 {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Highlight Styles */
+.news h3:first-of-type {
+  font-weight: 300;
+  font-weight: bold;
+}
+
+/* Optional: Add some transitions for hover effects */
+.news:hover {
+  font-weight: 300;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news img {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  background-color: white;
+}
